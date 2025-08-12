@@ -297,22 +297,40 @@
             box-shadow: 0 20px 40px rgba(0,0,0,0.15);
         }
 
-        .service-icon {
-       margin-bottom: 1rem;
+          .service-icon {
+    margin-bottom: 1rem;
 }
 
-        .service-icon img {
-       width: 60px;
-    height: 60px;
+.service-icon img {
+    width: 120px;   /* default size for desktops */
+    height: 120px;
     object-fit: cover;
-    border-radius: 50%; /* circular image */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* subtle shadow */
+    border-radius: 50%; /* circular */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
 }
 
+/* Hover zoom effect */
 .service-card:hover .service-icon img {
-    transform: scale(1.1); /* zoom effect on hover */
+    transform: scale(1.1);
 }
+
+/* Tablet screens */
+@media (max-width: 992px) {
+    .service-icon img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 576px) {
+    .service-icon img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
 
         .service-card h3 {
             color: #2c3e50;
