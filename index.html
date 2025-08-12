@@ -185,7 +185,7 @@
             margin-bottom: 1.5rem;
         }
 
-        .about-image {
+        /*  .about-image {
             background: linear-gradient(45deg, #e74c3c, #f39c12);
             height: 300px;
             border-radius: 15px;
@@ -194,7 +194,28 @@
             justify-content: center;
             color: white;
             font-size: 3rem;
-        }
+        }*/
+   .about-image {
+    height: 300px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* Optional: adds nice shadow */
+}
+
+.about-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This makes the image fill the container nicely */
+    border-radius: 15px;
+    transition: transform 0.3s ease; /* Optional: smooth hover effect */
+}
+
+.about-img:hover {
+    transform: scale(1.05); /* Optional: slight zoom on hover */
+}
 
         /* Menu Section */
         .menu-grid {
@@ -473,9 +494,11 @@
                     <p>Founded in 2018, our restaurant has become a beloved destination for food enthusiasts seeking exceptional Asian cuisine in a warm, welcoming atmosphere. Our talented chefs blend traditional recipes with innovative techniques to create unforgettable dining experiences.</p>
                     <p>Whether you're craving comforting noodle bowls, sizzling stir-fries, or delicate dim sum, Lazzy Panda offers something special for every palate. Join us for a culinary journey that celebrates the rich heritage of Asian gastronomy.</p>
                 </div>
-                <div class="about-image">
-                 <img src="logooo-01.png" alt="Lazzy Panda Restaurant" class="logo-img">
-                </div>
+               <div class="about-image">
+               <div class="about-image">
+               <img src="restaurant-interior.png" alt="Restaurant Interior" class="about-img">
+               </div>
+               </div>
             </div>
         </div>
     </section>
