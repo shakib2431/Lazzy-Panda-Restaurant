@@ -233,34 +233,79 @@
             text-align: center;
         }
 
-        .menu-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 0;
-            border-bottom: 1px solid #eee;
-        }
+/* Updated Menu Item Styles */
+.menu-item {
+    display: flex;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    align-items: center;
+}
 
-        .menu-item:last-child {
-            border-bottom: none;
-        }
+.menu-item:last-child {
+    border-bottom: none;
+}
 
-        .item-name {
-            font-weight: bold;
-            color: #2c3e50;
-        }
+.menu-item-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+    flex-shrink: 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
 
-        .item-description {
-            font-size: 0.9rem;
-            color: #7f8c8d;
-            margin-top: 5px;
-        }
+.menu-item-image:hover {
+    transform: scale(1.1);
+}
 
-        .item-price {
-            color: #e74c3c;
-            font-weight: bold;
-            font-size: 1.1rem;
-        }
+.menu-item-content {
+    flex: 1;
+}
+
+.menu-item-price {
+    flex-shrink: 0;
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.item-name {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.item-description {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-top: 5px;
+}
+
+/* Mobile Responsive for Menu Items */
+@media (max-width: 480px) {
+    .menu-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        padding: 20px 0;
+    }
+    
+    .menu-item-image {
+        width: 100px;
+        height: 100px;
+        align-self: center;
+    }
+    
+    .menu-item-content {
+        text-align: center;
+    }
+    
+    .menu-item-price {
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+}
 
         /* Services Section */
         .services {
@@ -526,42 +571,50 @@
             <div class="menu-grid">
                 <div class="menu-category">
                     <h3>Appetizers</h3>
-                    <div class="menu-item">
-                        <div>
-                            <div class="item-name">Dhaniya Murgh Kabab with Cheese</div>
-                            <div class="item-description">Steamed vegetable dumplings</div>
-                        </div>
-                        <span class="item-price">359</span>
-                    </div>
-                    <div class="menu-item">
-                        <div>
-                            <div class="item-name">Dragon Paneer</div>
-                            <div class="item-description">Fresh vegetables wrapped in crispy shell</div>
-                        </div>
-                        <span class="item-price">359</span>
-                    </div>
-                    <div class="menu-item">
-                        <div>
-                            <div class="item-name">Italian Cheese Burst Bread</div>
-                            <div class="item-description">Fresh vegetables wrapped in crispy shell</div>
-                        </div>
-                        <span class="item-price">319/- /339/-</span>
-                    </div>
-                     <div class="menu-item">
-                        <div>
-                            <div class="item-name">Dragon Chicken</div>
-                            <div class="item-description">Fresh vegetables wrapped in crispy shell</div>
-                        </div>
-                        <span class="item-price">399</span>
-                    </div>
-                    <div class="menu-item">
-                        <div>
-                            <div class="item-name">Mexican Rice with jacket Potato</div>
-                            <div class="item-description">Spicy chicken wings with authentic spices</div>
-                        </div>
-                        <span class="item-price">319/- /339/-</span>
-                    </div>
-                </div>
+                   <div class="menu-item">
+    <img src="Dhaniya Murgh Kabab with Cheese.png" alt="Dhaniya Murgh Kabab with Cheese" class="menu-item-image">
+    <div class="menu-item-content">
+        <div class="item-name">Dhaniya Murgh Kabab with Cheese</div>
+        <div class="item-description">Juicy chicken kabab infused with fresh coriander and melted cheese</div>
+    </div>
+    <span class="item-price menu-item-price">359</span>
+</div>
+
+<div class="menu-item">
+    <img src="Dragon Paneer.png" alt="Dragon Paneer" class="menu-item-image">
+    <div class="menu-item-content">
+        <div class="item-name">Dragon Paneer</div>
+        <div class="item-description">Spicy Indo-Chinese paneer with bell peppers and onions</div>
+    </div>
+    <span class="item-price menu-item-price">359</span>
+</div>
+
+<div class="menu-item">
+    <img src="Italian Cheese Burst Bread.png" alt="Italian Cheese Burst Bread" class="menu-item-image">
+    <div class="menu-item-content">
+        <div class="item-name">Italian Cheese Burst Bread</div>
+        <div class="item-description">Crispy bread stuffed with melted mozzarella and Italian herbs</div>
+    </div>
+    <span class="item-price menu-item-price">319/- /339/-</span>
+</div>
+
+<div class="menu-item">
+    <img src="Dragon Chicken.png" alt="Dragon Chicken" class="menu-item-image">
+    <div class="menu-item-content">
+        <div class="item-name">Dragon Chicken</div>
+        <div class="item-description">Tender chicken pieces in spicy Indo-Chinese dragon sauce</div>
+    </div>
+    <span class="item-price menu-item-price">399</span>
+</div>
+
+<div class="menu-item">
+    <img src="Mexican Rice with jacket Potato.png" alt="Mexican Rice with Jacket Potato" class="menu-item-image">
+    <div class="menu-item-content">
+        <div class="item-name">Mexican Rice with Jacket Potato</div>
+        <div class="item-description">Flavorful Mexican-style rice served with perfectly baked jacket potato</div>
+    </div>
+    <span class="item-price menu-item-price">319/- /339/-</span>
+</div>
 
                 <!--<div class="menu-category">
                     <h3>Main Courses</h3>
