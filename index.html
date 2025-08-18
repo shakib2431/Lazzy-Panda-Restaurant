@@ -425,35 +425,82 @@
         }
 
         .contact-info {
-    background: #2c3e50;
-    color: white;
-    padding: 3rem;               /* Bigger box */
-    border-radius: 20px;
-    font-size: 1.2rem;           /* Larger text */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-}
+            background: #2c3e50;
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+        }
 
-.contact-form {
-    background: white;
-    padding: 3rem;               /* More padding */
-    border-radius: 20px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-    font-size: 1.1rem;
-}
+        .contact-info h3 {
+            color: #e74c3c;
+            margin-bottom: 1rem;
+        }
 
-.submit-btn {
-    background: linear-gradient(90deg, #e74c3c, #ff6b6b);
-    font-size: 1.2rem;
-    padding: 15px 40px;          /* Bigger button */
-    border-radius: 50px;         /* Rounded button */
-    transition: all 0.3s ease-in-out;
-}
+        .contact-item {
+            margin-bottom: 1.5rem;
+        }
 
-.submit-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(231, 76, 60, 0.3);
-}
+        .contact-item strong {
+            color: #e74c3c;
+        }
 
+        .contact-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ecf0f1;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #e74c3c;
+        }
+
+        .submit-btn {
+            background: #e74c3c;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: #c0392b;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
 
         /* Responsive Design */
         @media (max-width: 768px) {
