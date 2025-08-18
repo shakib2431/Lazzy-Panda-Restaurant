@@ -182,29 +182,48 @@
             gap: 4rem;
             align-items: center;
         }
-.about-text {
+
+        .about-text {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;       
-    line-height: 1.8;          
+    font-size: 1.5rem;       /* Bigger text */
+    line-height: 2;          /* More spacing */
     color: #2c3e50;
     font-weight: 400;
 }
 
 .about-text p {
-    margin-bottom: 2rem;     
+    margin-bottom: 2rem;     /* More spacing between paragraphs */
 }
 
 .about-image {
-    height: 500px;           /* Much bigger image */
+    height: 450px;           /* Bigger image */
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);  /* Soft shadow */
+}
+
+
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+        }
+
+   .about-image {
+    height: 300px;
+    border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-}
    
+}
 
+.about-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This makes the image fill the container nicely */
+    border-radius: 15px;
+    transition: transform 0.3s ease; /* Optional: smooth hover effect */
+}
 
 .about-img:hover {
     transform: scale(1.05); /* Optional: slight zoom on hover */
@@ -234,12 +253,9 @@
 
 .menu-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);  /* Force exactly 2 columns */
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     gap: 40px;
     margin-top: 50px;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .menu-category h3 {
@@ -268,9 +284,9 @@
 
 .menu-item-image {
     width: 100%;
-    height: 280px; /* Fix the typo - was 200x */
+    height: 200x; /* bigger image area */
     object-fit: cover;
-    object-position: center;
+    object-position: center top; /* shift image focus downwards */
     transition: transform 0.4s ease;
 }
         
@@ -525,13 +541,6 @@
             .menu-grid {
                 grid-template-columns: 1fr;
             }
-            .menu .section-title {
-    font-size: 2.5rem;
-}
-
-.menu-item-image {
-    height: 220px;
-}
 
             .services-grid {
                 grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -571,7 +580,7 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <button class="menu-toggle" id="menuToggle">☰</button>
+            <button class="menu-toggle" id="menuToggle">â˜°</button>
         </nav>
     </header>
 
@@ -591,7 +600,7 @@
             <h2 class="section-title">About Us</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Welcome to Lazzy Panda – your ultimate destination for mouthwatering delicacies and the best hookah in town. We take pride in offering a perfect blend of irresistible flavors and a premium hookah experience, all in one vibrant and relaxing space.</p>
+                    <p>Welcome to Lazzy Panda â€“ your ultimate destination for mouthwatering delicacies and the best hookah in town. We take pride in offering a perfect blend of irresistible flavors and a premium hookah experience, all in one vibrant and relaxing space.</p>
                     <p>Since our inception, Lazzy Panda has been the go-to spot for those who crave exceptional food and unforgettable vibes. Our chefs pour passion into every dish, crafting bold flavors and creative combinations to satisfy every craving.</p>
                     <p>From our savory specialties to our smooth, aromatic hookah blends, every visit promises a sensory journey like no other. Whether you're here for a casual meal with friends or to unwind with the finest hookah in town, Lazzy Panda welcomes you to relax, indulge, and make every moment memorable.</p>
                 </div>
@@ -666,7 +675,7 @@
                         <div class="item-name">Dhaniya Murgh Kabab with Cheese</div>
                         <div class="item-description">Juicy chicken kabab infused with fresh coriander and melted cheese</div>
                     </div>
-                    <span class="item-price">₹359</span>
+                    <span class="item-price">â‚¹359</span>
                 </div>
 
                 <div class="menu-item">
@@ -675,7 +684,7 @@
                         <div class="item-name">Dragon Paneer</div>
                         <div class="item-description">Spicy Indo-Chinese paneer with bell peppers and onions</div>
                     </div>
-                    <span class="item-price">₹359</span>
+                    <span class="item-price">â‚¹359</span>
                 </div>
 
                 <div class="menu-item">
@@ -684,7 +693,7 @@
                         <div class="item-name">Italian Cheese Burst Bread</div>
                         <div class="item-description">Crispy bread stuffed with melted mozzarella and Italian herbs</div>
                     </div>
-                    <span class="item-price">₹319/- /₹339/-</span>
+                    <span class="item-price">â‚¹319/- /â‚¹339/-</span>
                 </div>
 
                 <div class="menu-item">
@@ -693,7 +702,7 @@
                         <div class="item-name">Dragon Chicken</div>
                         <div class="item-description">Tender chicken pieces in spicy Indo-Chinese dragon sauce</div>
                     </div>
-                    <span class="item-price">₹399</span>
+                    <span class="item-price">â‚¹399</span>
                 </div>
 
                 <div class="menu-item">
@@ -702,7 +711,7 @@
                         <div class="item-name">Mexican Rice with Jacket Potato</div>
                         <div class="item-description">Flavorful Mexican-style rice served with perfectly baked jacket potato</div>
                     </div>
-                    <span class="item-price">₹319/- /₹339/-</span>
+                    <span class="item-price">â‚¹319/- /â‚¹339/-</span>
                 </div>
             </div>
         </div>
@@ -856,12 +865,3 @@
     </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
