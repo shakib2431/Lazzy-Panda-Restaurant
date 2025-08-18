@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lazzy Panda - Authentic Asian Cuisine</title>
+    <title>Lazzy Panda</title>
     
     <!-- Step 1: Import Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
@@ -106,18 +106,21 @@
            
         }
 
-        .hero-content h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-            animation: fadeInUp 1s ease;
-        }
+       .hero-content h1 {
+    font-family: 'Poppins', sans-serif; /* Modern font */
+    font-weight: 700; /* Bold */
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Optional: Adds depth */
+}
 
-        .hero-content p {
-            font-size: 2rem;
-            margin-bottom: 2rem;
-            animation: fadeInUp 1s ease 0.2s both;
-        }
-
+.hero-content p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Semi-bold */
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
         .cta-button {
             display: inline-block;
             background: #0CACB4;
@@ -539,10 +542,14 @@
         @media (max-width: 480px) {
             .hero-content h1 {
                 font-size: 2rem;
+                letter-spacing: 1px; /* Slightly spaced out */
+                color: #fff; /* Pure white */
             }
 
             .hero-content p {
                 font-size: 1.1rem;
+                letter-spacing: 0.5px;
+                 color: #f8f8f8; /* Soft white */
             }
 
             section {
@@ -854,4 +861,5 @@
     </script>
 </body>
 </html>
+
 
