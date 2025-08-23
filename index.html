@@ -597,7 +597,6 @@
     justify-content: center;
     width: 45px;
     height: 45px;
-    background: #0CACB4;
     color: white;
     border-radius: 50%;
     text-decoration: none;
@@ -605,11 +604,26 @@
     transition: all 0.3s ease;
 }
 
-.social-link:hover {
-    background: #0a9ca4;
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(12, 172, 180, 0.4);
+/* Instagram gradient background */
+.social-link[aria-label="Instagram"] {
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
 }
+
+.social-link[aria-label="Instagram"]:hover {
+    background: linear-gradient(45deg, #e6683c 0%,#dc2743 25%,#cc2366 50%,#bc1888 75%,#8b0d7a 100%);
+    transform: translateY(-3px);
+}
+
+/* Facebook blue background */
+.social-link[aria-label="Facebook"] {
+    background: #1877f2;
+}
+
+.social-link[aria-label="Facebook"]:hover {
+    background: #166fe5;
+    transform: translateY(-3px);
+}
+
 
 /* Mobile responsive */
 @media (max-width: 768px) {
@@ -938,6 +952,7 @@
     </script>
 </body>
 </html>
+
 
 
 
