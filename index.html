@@ -261,11 +261,11 @@
 
 .menu-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); /* Match the new max-width */
-    gap: 30px;
+    grid-template-columns: repeat(4, 1fr); /* Fixed 4 columns */
+    gap: 20px; /* Reduced gap to fit 4 items */
     margin-top: 20px;
     justify-items: center;
-    max-width: 1200px; /* Increased container width */
+    max-width: 1400px; /* Increased to accommodate 4 items */
     margin-left: auto;
     margin-right: auto;
 }
@@ -287,12 +287,11 @@
     position: relative;
     cursor: pointer;
     margin-bottom: 15px;
-    height: 450px; /* Increased from 380px */
-    max-width: 420px; /* Increased from 350px */
+    height: 400px; /* Slightly reduced */
+    max-width: 300px; /* Reduced to fit 4 in a row */
     width: 100%;
     margin: 0 auto 15px auto;
 }
-
 .menu-item-image {
     width: 100%;
     height: 100%; /* Fill the square container */
@@ -960,6 +959,7 @@
     </script>
 </body>
 </html>
+
 
 
 
