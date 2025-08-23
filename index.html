@@ -261,9 +261,10 @@
 
 .menu-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
     margin-top: 20px;
+    justify-items: center; /* Center the items in the grid */
 }
 
 .menu-category h3 {
@@ -283,8 +284,9 @@
     position: relative;
     cursor: pointer;
     margin-bottom: 15px;
-    aspect-ratio: 1/1; /* Key change for square */
-    max-height: none; /* Remove fixed height */
+    height: 350px; /* Fixed height instead of square */
+    max-width: 320px; /* Limit maximum width */
+    margin: 0 auto 15px auto; /* Center the items */
 }
 
 .menu-item-image {
@@ -954,6 +956,7 @@
     </script>
 </body>
 </html>
+
 
 
 
