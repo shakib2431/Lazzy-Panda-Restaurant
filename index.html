@@ -267,13 +267,11 @@
     background: linear-gradient(90deg, #ff6b6b, #ee5a24);
 }
 
-  .menu-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        max-width: 400px;
-        margin: 0 auto;
-    }
-
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 30px;
+}
 
 
 .menu-category h3 {
@@ -356,8 +354,7 @@
         padding: 20px 0;
     }
     @media (max-width: 480px) {
-    
-
+    /* Your existing code... */
     
     /* ADD THESE BUTTON FIXES: */
      .hero-content .cta-button {
@@ -375,22 +372,11 @@
     .menu-item-image {
         width: 100px;
         height: 100px;
-       /** align-self: center;*/
-        object-fit: cover;
+        align-self: center;
     }
     
     .menu-item-content {
-       /* text-align: center;*/
-        height: 30%;
-        padding: 10px;
-    }
-      .item-name {
-        font-size: 1.1rem;
-        margin-bottom: 5px;
-    }
-     .item-description {
-        font-size: 0.9rem;
-        line-height: 1.4;
+        text-align: center;
     }
     
   .item-price {
