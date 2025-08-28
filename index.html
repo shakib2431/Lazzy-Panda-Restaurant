@@ -770,21 +770,14 @@
         font-size: 18px;
     }
 }
-/* --- Mobile: auto-resize buttons but align centers perfectly --- */
+/* --- Mobile: center Full Menu PDF button only --- */
 @media (max-width: 600px) {
-  .hero-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;   /* keeps centers aligned */
-    gap: 12px;
-  }
-
-  .hero-content a {
-    display: inline-block;
-    padding: 10px 28px;    /* auto width based on text */
-    text-align: center;
-    margin: 0 auto;
-    min-width: max-content; /* prevents shrinking too much */
+  .cta-button {
+    display: inline-block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+    width: auto;
   }
 }
 
@@ -1101,6 +1094,7 @@
     </script>
 </body>
 </html>
+
 
 
 
