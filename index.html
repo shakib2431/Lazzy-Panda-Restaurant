@@ -367,6 +367,40 @@
         margin-left: 0 !important;
     }
 }
+    /* --- Mobile: stack & center hero buttons --- */
+@media (max-width: 600px) {
+  /* Preferred: if the buttons are inside a wrapper (example: .hero-buttons or .cta-group) */
+  .hero-buttons,
+  .cta-group {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 12px;
+  }
+
+  /* Make each button full-width-ish and centered */
+  .hero-buttons a,
+  .hero-buttons button,
+  .cta-group a,
+  .cta-group button {
+    display: inline-block !important;
+    width: min(320px, 86%) !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+  }
+
+  /* Fallback: if your buttons use common classes (adjust if your classes are different) */
+  .btn,
+  .button,
+  .btn-primary,
+  .btn-cta {
+    display: inline-block !important;
+    width: min(320px, 86%) !important;
+    margin: 0.5rem auto !important;
+    text-align: center !important;
+  }
+}
+
     
     .menu-item-image {
         width: 100px;
@@ -1040,6 +1074,7 @@
     </script>
 </body>
 </html>
+
 
 
 
